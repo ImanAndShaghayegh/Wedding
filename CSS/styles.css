@@ -1,0 +1,187 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    direction: rtl!important;
+}
+.F-small { font-size: 1.8rem !important;}
+.F-medium { font-size: 2.1rem !important;}
+.F-large { font-size: 2.4rem !important;}
+.F-large-x { font-size: 2.7rem !important;}
+.F-huge { font-size: 4rem !important;}
+span { font-size: 1.5rem !important; display: inline-block;}
+p {color: #47154d}
+span {color: #333333}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+@media (max-width: 1000px) {
+    /* استایل‌های مخصوص صفحه‌نمایش‌هایی با عرض حداکثر 600 پیکسل */
+    main {
+        width: 80vw!important;
+        height: 55vh!important;
+    }
+    .F-small { font-size: 1rem !important;}
+    .F-medium { font-size: 1.1rem !important;}
+    .F-large { font-size: 1.3rem !important;}
+    .F-large-x { font-size: 1.4rem !important;}
+    .F-huge { font-size: 1.9rem !important;}
+    span { font-size: 0.8rem !important; display: inline-block;}
+}
+/* Box Styling */
+.box {
+    width: 100%!important;
+    height: 100%!important;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s linear;
+}
+
+/* Envelope Styling */
+.envelope {
+    width: 100%;
+    height: 100%;
+    fill: #ff4081;
+    transform: scale(0.8); /* Scaled down */
+}
+
+/* Hidden class to hide elements */
+.hidden {
+    display: none;
+}
+
+/* Wedding Card Styles */
+#wedding-card {
+    width: 60%;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Set text direction to right-to-left for Persian */
+    font-family: 'Tahoma', 'Arial', sans-serif; /* Persian-friendly fonts */
+    line-height: 1.8;
+    border: 2px solid #e91e63; /* Decorative border */
+    position: relative; /* For the decorative lines */
+    z-index: +1;
+}
+
+/* Title Styling */
+.wedding-card h1 {
+    font-size: 32px;
+    color: #e91e63; /* Elegant pink for title */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+.wedding-card p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Couple Names */
+.couple-names {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ce034a;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Event Details */
+.event-details {
+    margin-bottom: 30px;
+}
+
+.event-details span {
+    display: block;
+    font-size: 18px;
+    color: #333;
+}
+
+/* RSVP Section */
+.rsvp {
+    font-size: 16px;
+    color: #555;
+}
+
+.rsvp span {
+    font-weight: bold;
+}
+
+/* Footer Styling */
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #656565;
+    font-style: italic;
+}
+
+/* Decorative lines */
+#wedding-card:before, #wedding-card:after {
+    content: '';
+    display: block;
+    height: 4px;
+    background: linear-gradient(to right, #e91e63, #f4f4f4, #e91e63);
+    margin: 20px 0;
+}
+
+#wedding-card:after {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Bar Visualizer Styling */
+#visualizer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 200px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.bar {
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    background-color: pink; /* Set all bars to pink */
+    transition: height 0.2s ease;
+}
+
+/* Flash screen effect when envelope opens */
+.flash-screen {
+    animation: flash 0.5s ease-in-out;
+}
+
+@keyframes flash {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: #f4f4f4;
+    }
+}
+
+/* Spinning Div transition (for smooth shrinking and fading) */
+#spinning-div {
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+/* Wedding Card initial opacity and scale for smooth reveal */
+#wedding-card {
+    opacity: 0;
+    transform: scale(0.8);  /* Start scaled down */
+    transition: opacity 0.1s ease, transform 0.1s ease;
+}
+
+.box:not(.hidden) .wedding-card {
+    opacity: 1;
+    transform: scale(1);
+}

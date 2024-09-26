@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body style="background-image: url('background.jpg')">
+<!-- Spinning Envelope -->
+<main  style="width: 40vw; height: 55vh">
+    <invite style="width: 100vw">
+        <div id="card-div" class="card box wedding-card" style="width: 70vw; height:100%; display: none; background: linear-gradient(45deg, pink, magenta, purple)">
+            <div class="wedding-card card-body">
+                <p class="text-center F-large"> به نام خالق عشق و محبت</p>
+                <div class="couple-names text-center F-huge">
+                    ایمان و شقایق
+                </div>
+                <div class="text-center">
+                    <span>عشق بهانه آغاز بود</span>
+                    <span>آغاز قشنگ‌ترین صبح زندگی ما</span>
+                    <span>عشق بهانه سبز با هم زیستن بود</span>
+                    <span>و اینک وصال…</span>
+                    <span>بارش خوشبختی است بر آشیان عاشق‌ترین دست‌ها</span>
+                    <span>رونق بهاری‌ترین ثانیه‌های زندگی ما باشید</span>
+                </div>
+                <div class="event-details text-center F-large">
+                    <span>تاریخ: پانزده مهر ۱۴۰۳</span>
+                    <span>از ساعت ۱۹ به صرف شام و شیرینی</span>
+                    <span>محل برگذاری:اینجا اونجا همونجا</span>
+                </div>
+
+                <div class="rsvp text-center F-small">
+                    <div><span>اگر از حضور گرمتان بی نصیب هستیم لطفا به ما اطلاع دهید</span></div>
+                    <div>
+                        <span>اسماعیلیان</span>
+                        <span>09376383880</span>
+                    </div>
+                </div>
+
+                <div class="text-center footer F-small">
+                    به امید دیدارتان
+                </div>
+            </div>
+        </div>
+        <div id="spinning-div" class="box envelope" style="width: 70vw;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+            </svg>
+        </div>
+
+
+    </invite>
+
+    <!-- Audio Visualizer -->
+    <div id="visualizer" class="hidden">
+        <!-- Create 20 bars -->
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</main>
+
+<!-- Audio Element -->
+<audio id="wedding-music" src="Assets/music.mp3" preload="auto"></audio>
+
+</body>
+<script src="JS/script.js"></script>
+</html>
+

@@ -1,0 +1,45 @@
+.wedding-card {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.wedding-card h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.wedding-card p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+.wedding-card .couple-names {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e91e63;
+    margin-bottom: 5px;
+}
+.wedding-card .event-details {
+    margin-bottom: 30px;
+}
+.wedding-card .event-details span {
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+.wedding-card .rsvp {
+    font-size: 14px;
+    color: #555;
+}
+.wedding-card .rsvp span {
+    font-weight: bold;
+}
+.wedding-card .footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
